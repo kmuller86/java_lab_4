@@ -19,7 +19,7 @@ public class Main {
         }
 
 //        *************************************
-
+        /* Przykład ArrayIndexOutOfBoundsException, NumberFormatException */
         String tab[] = {"Ala", "Ola", "Ela", "Ula"};
         Scanner scan = new Scanner(System.in);
         int index = -1;
@@ -52,9 +52,9 @@ public class Main {
                 System.out.println("Koniec programu");
             }
         }
-        
+
 //        *************************************
-        
+
         /* Przykład null pointer */
         try {
             String name = null;
