@@ -6,12 +6,26 @@ public class Main {
 
         /* przykład 4. Blok try catch */
 
+        /* Przykład ArithmeticException */
+        /* w bloku try spradzamy poporawność działania arytmetycznego */
+        try {
+            int result = 10 / 0;
+            System.out.print("a) Czy ten kod się wykona ?");
+            /* błąd arytmetyczny */
+            /* jeśli zostanie rzucony błąd klasy ArithmeticException, to zostanie wywołany kod z sekcji catch */
+        } catch (ArithmeticException e) {
+//            e.getMessage() - komunikat błedu
+            System.out.println("ArithmeticException " + e.getMessage()); // ArithmeticException / by zero
+        }
+
+//        *************************************
+
         String tab[] = {"Ala", "Ola", "Ela", "Ula"};
         Scanner scan = new Scanner(System.in);
         int index = -1;
 
-        try {
-            index = Integer.parseInt(scan.next());
+        try { // scan.next() - string z klawiatury
+            index = Integer.parseInt(scan.next()); // Integer.parseInt() - parsuje(zmienia typ) typ String na typ int / Integer
         } catch (Exception n) {
             System.out.println("Błąd, brak informacji jaki to błąd");
         }
@@ -38,7 +52,9 @@ public class Main {
                 System.out.println("Koniec programu");
             }
         }
-
+        
+//        *************************************
+        
         /* Przykład null pointer */
         try {
             String name = null;
