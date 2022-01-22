@@ -5,7 +5,7 @@ public class Main {
         a) Stwożyć interfejs Budynek,
         b) interfejs powinien mieć metody:
             - double powierzchnia(double powBudynku, double powPodworka, double powParkingu);
-            - String adresBudynku(String miejscowosc, String ulica, int nrDomu, String nrLokalu String kodPocztowy);
+            - String adresBudynku(String miejscowosc, String ulica, int nrDomu, String nrLokalu, String kodPocztowy);
             - void liczbaOkien(int value); // użycie jak setter
             - void liczbaMieszkancow(int value); // użycie jak setter
             - void kolorDomu(KolorEnum kolor); // użycie jak setter
@@ -19,7 +19,7 @@ public class Main {
         b) zaimplementować wszystkie metody,
         c) stworzyć brakujące pola(prywatne), gettery i settery, napisać metodę toString
         (gettery i settery najlepiej wygenerować: Code/Prawy myszy --> Generate --> getters/setters/toString)
-        d) stworzyć jedną dowolną metodę przez siebie,
+        d) stworzyć jedną dowolną metodę przez siebie (nie deklarujemy tej metody w interfejsie),
         */
 
         /* zad.3
